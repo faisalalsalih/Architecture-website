@@ -285,9 +285,7 @@
 
 
 @media only screen and (max-width:1080px) {
-    #middle{
-        width: fit-content;
-    }
+   
     #middle .pics {
         gap: 10px;
     }
@@ -304,9 +302,6 @@
     #middle .pics  img{
         width: 100%;
     }
-    #middle{
-        width: fit-content;
-    }
 }
 
 @media only screen and (max-width:786px) {
@@ -315,9 +310,6 @@
         gap: 30px;
         justify-content: center;
         text-align: center;
-    }
-    #middle{
-        width: fit-content;
     }
 }
 
@@ -895,7 +887,7 @@
 
 @media only screen and (max-width:640px){
 
-    #middle .faj .dropdown1{
+    #middle .faj2 .dropdown1{
         width: 500px;
     }
     #middle .faj .dropdown2{
