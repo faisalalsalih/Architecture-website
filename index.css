@@ -1,0 +1,1002 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&family=Sora:wght@100..800&display=swap');
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Giga:wght@100..900&family=Parkinsans:wght@300..800&family=Sora:wght@100..800&display=swap'); */
+
+:root {
+    font-family: "DM sans", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('assets/hotel7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+
+
+#hero .navbar {
+    height: 10vh;
+    width: 100%;
+    background-color: #CAC9C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+#hero .navbar .icon {
+    display: flex;
+    gap: 5px;
+}
+
+#hero .list ul {
+    display: flex;
+    gap: 50px;
+    padding-top: 7px;
+    font-size: 1.2rem;
+    list-style-type: none;
+    color: #071817;
+}
+
+#hero .btn button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #1c7605;
+    color: #CAC9C9;
+    border: 2px solid transparent;
+}
+
+#hero .list ul>li:hover {
+    color: #1c7605;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+#hero .btn button:hover {
+    background-color: #CAC9C9;
+    border: 2px solid #1c7605;
+    color: #071817;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+
+#hero .text {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 800;
+    z-index: 1;
+
+}
+
+#hero .text h1 {
+    font-size: 4rem;
+}
+
+#hero .text p {
+    font-size: 1.2rem;
+}
+
+#hero .text button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #1c7605;
+    color: #CAC9C9;
+    border: 1px solid transparent;
+}
+
+#hero .text button:hover {
+    background-color: transparent;
+    border: 1px solid #1c7605;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+#hero #menu_btn {
+    display: none;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 100%;
+    height: 0;
+    /* background: url('assets/hotel5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.sidebar::before {
+    content: "";
+    background: url('assets/hotel5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    z-index: -2;
+    /* Add the blur effect */
+}
+
+.sidebar.active {
+    height: 100%;
+}
+
+
+.sidebar .upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.sidebar .upper #cross {
+    cursor: pointer;
+}
+
+.sidebar .upper #cross:hover {
+    transform: rotate(360deg);
+    transition: transform 400ms ease-in-out;
+}
+
+.middle ul>li {
+    font-size: 30px;
+    padding: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.middle ul>li:hover {
+    color: #1c7605;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* ============== Responsiveness of The Hero Section =============== */
+
+
+
+@media only screen and (max-width:786px) {
+    #hero .list {
+        display: none;
+    }
+
+    #hero .btn {
+        display: none;
+    }
+
+    #hero #menu_btn {
+        display: block;
+    }
+
+    #hero .text {
+        text-align: center;
+    }
+
+    #hero .text h1 {
+        font-size: 3rem;
+    }
+
+    #hero .text p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* ============= The End of the Upper Section ================ */
+
+
+
+
+/* ================ Start Of the Middle Section ================== */
+
+#middle {
+    width: 100%;
+    height: fit-content;
+}
+
+#middle .interior {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+}
+
+#middle .int1 {
+    padding: 20px;
+}
+
+#middle .int2 {
+    padding: 20px;
+}
+
+#middle .int1 h5 {
+    margin-bottom: 10px;
+}
+
+#middle .pics {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    padding: 0px 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#middle .pics img:hover {
+    cursor: pointer;
+}
+
+/* Responiveness of the middle section of the upper */
+
+
+@media only screen and (max-width:1080px) {
+    #middle .pics {
+        gap: 10px;
+    }
+}
+
+
+@media only screen and (max-width:1052px) {
+    #middle .pics {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #middle .pics  img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:786px) {
+    #middle .interior {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+/* ========= THe Third part of The Middle ========= */
+
+
+#middle .recept {
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/* Responivness of the .recept */
+
+@media only screen and (max-width:660px) {
+    #middle .recept {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+/* =============== About Section Start From Here =============== */
+
+#middle .about {
+    width: 100%;
+    height: fit-content;
+    /* background-color: #06a0b8; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
+    color: #071817;
+    margin-bottom: 20px;
+}
+
+#middle .about .abtext {
+    padding-top: 100px;
+}
+
+
+
+/* Responsiveness of the about section  */
+
+@media only screen and (max-width:820px) {
+    #middle .about {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #middle .about .abtext {
+        padding-top: 10px;
+    }
+
+    #middle .abtext p,
+    h2 {
+        text-align: center;
+    }
+}
+
+
+/* ====== desc section start from here ======== */
+
+
+#middle .desc {
+    width: 100%;
+    height: fit-content;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 20px;
+}
+
+
+
+/* Responive the desc side here */
+@media only screen and (max-width:786px) {
+    #middle .desc {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #middle .di1 {
+        align-items: center;
+    }
+}
+
+
+
+/* ========= Gallery Start from Here  ============ */
+
+#middle .gallery{
+    width: 100%;
+    height: fit-content;
+    /* background-color: #06a0b8; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+#middle .img2{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Responsive the Gallery Section */
+@media only screen and (max-width:920px){
+    #middle .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    #middle .img2{
+        gap: 10px;
+    }
+    #middle .gallery img{
+        width: 100%;
+    }
+}
+
+
+
+
+/* ====== Cover Section Start From Here ======= */
+#middle .cover{
+    width: 100%;
+    height: 70vh;
+    background: url('assets/hotel4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.btns button{
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #1c7605;
+    color: #CAC9C9;
+    border: 2px solid transparent;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btns button:hover{
+    background-color: transparent;
+    border: 2px solid #1c7605;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+
+
+/* Responsive the cover section here  */
+
+@media only screen and (max-width:1220px){
+    #middle .btns button{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width:980px){
+    #middle .btns button{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #middle .cover{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media only screen and (max-width:786px){
+    #middle .cover{
+        text-align: center;
+    }
+    #middle .btns{
+        justify-content: center;
+    }
+}
+
+
+
+/* =============== feedback section start from here =================  */
+
+
+#middle .feedback{
+    width: 100%;
+    height: fit-content;
+    /* border-bottom: 2px solid black; */
+    /* background-color: #06a0b8; */
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 30px;
+    align-items: center;
+}
+
+.feedback .fed2 img:hover{
+    cursor: pointer;
+}
+
+
+.feedback .fed2{
+    margin-top: 100px;
+}
+
+
+/* Responsive the feedback option */
+
+@media only screen and (max-width:580px){
+    #middle .feedback{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #middle .feedback .fed2{
+        margin-top: 20px;
+    }
+    #middle .feedback .fed1 h1{
+        text-align: center;
+    }
+}
+
+
+
+/* ========== Clients Section Start from Here ========== */
+#middle .clients{
+    width: 100%;
+    height: fit-content;
+    /* background-color: #4e059272; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#middle .clients .part1{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+#middle .golo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('assets/20+\ Gorgeous\ Male\ Ceo\ Outfits\ Make_\'s\ You\ Feel\ Like\ a\ Goddess\ 56.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#middle .goll1{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+#middle .clients .part2{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+#middle .golo2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('assets/76c46acd-dcd6-4628-80e3-e2a007c7ddca.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#middle .golo3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('assets/cac7b49f-6cab-48bb-95ca-d065520ef2de.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#middle .golo4{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('assets/vin.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#middle .goll1{
+    display: flex;
+    gap: 20px;
+}
+
+
+#middle .clients .part3{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+
+
+#middle .clients .part4{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+    color: #071817;
+}
+
+#middle .clients .goll1{
+    justify-content: center;
+}
+
+
+
+/* Responsive the clients section here */
+
+
+
+@media only screen and (max-width:1020px){
+
+    #middle .clients{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #middle .clients .part1{
+        width: 100%;
+    }
+
+    #middle .clients .part2{
+        width: 100%;
+    }
+
+    #middle .clients .part3{
+        width: 100%;
+    }
+
+
+    #middle .clients .part4{
+        width: 100%;
+    }
+    #middle .clients .goll1{
+        justify-content: center;
+    }
+}
+
+
+
+/* The Faqs Section start from here */
+
+#middle .faj{
+    width: 100%;
+    height: fit-content;
+    /* background-color: rgb(23, 196, 196);/ */
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    padding: 60px;
+}
+
+#middle .faj1{
+    padding: 40px;
+}
+
+#middle  .faj1 p{
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#middle .faj1 h2{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+#middle .faj1 button{
+    border: none;
+    background-color: #1c7605;
+    color: #CAC9C9;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#middle .faj1 button:hover{
+    border: 2px solid #1c7605;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+    color: #071817;
+}
+
+
+#middle .faj2 .dropdown1{
+    width: 600px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#middle .faj2 .dropdown2{
+    width: 600px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+
+#middle .faj2 .dropdown3{
+    width: 600px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+
+#middle .faj2 .dropdown4{
+    width: 600px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+
+#middle .faj2 .dropdown5{
+    width: 600px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#middle .faj2 .dropdown1 .details1{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#middle .faj2 .dropdown2 .details2{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#middle .faj2 .dropdown3 .details3{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#middle .faj2 .dropdown4 .details4{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+
+#middle .faj2 .dropdown5 .details5{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#middle .faj2 .dropdown1 .dropo1{
+    cursor: pointer;
+}
+
+#middle .faj2 .dropdown2 .dropo2{
+    cursor: pointer;
+}
+
+#middle .faj2 .dropdown3 .dropo3{
+    cursor: pointer;
+}
+
+
+#middle .faj2 .dropdown4 .dropo4{
+    cursor: pointer;
+}
+
+#middle .faj2 .dropdown5 .dropo5{
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive the dropdown section  */
+@media only screen and (max-width:1100px){
+    #middle .faj{
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width:640px){
+
+    #middle .faj .dropdown1{
+        width: 500px;
+    }
+    #middle .faj .dropdown2{
+        width: 500px;
+    }
+    #middle .faj .dropdown3{
+        width: 500px;
+    }
+    #middle .faj .dropdown4{
+        width: 500px;
+    }
+    #middle .faj .dropdown5{
+        width: 500px;
+    }
+    #middle .faj1 > button{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/* The footer section started from here */
+
+
+#footer{
+    width: 100%;
+    height: fit-content;
+}
+
+#footer .ghat1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    padding: 80px;
+}
+
+#footer .ghat1 button{
+    border: none;
+    background-color: #1c7605;
+    color: #CAC9C9;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 150px;
+}
+
+#footer .ghat1 button:hover{
+    border: 2px solid #1c7605;
+    transition: all 400ms ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+#footer .ghat2{
+    width: 100%;
+    height: fit-content;
+    background-color: #071807;
+    color: #CAC9C9;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px;
+}
+
+
+
+
+.input button{
+    border: 2px solid transparent;
+    padding: 10px;
+    background-color: #1c7605;
+    border-radius: 15px;
+    color: #CAC9C9;
+    margin-bottom: 10px;
+}
+
+.input button:hover{
+    border: 2px solid #1c7605;
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    color: #071817;
+}
+
+
+/* Responsive the footer section here */
+
+
+@media only screen and (max-width:930px){
+    #footer .ghat1{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer .ghat1b button{
+        margin-left: 60px;
+        margin-top: 100px;
+    }
+
+    #footer .ghat2{
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
