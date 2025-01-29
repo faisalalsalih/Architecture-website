@@ -28,7 +28,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('assets/hotel7.jpg');
+    background: url('./assets/hotel7.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -875,6 +875,8 @@
 
 
 
+
+
 /* Responsive the dropdown section  */
 @media only screen and (max-width:1100px){
     #middle .faj{
@@ -904,6 +906,28 @@
     }
     #middle .faj1 > button{
         margin-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width:540px){
+    #middle .faj2 .dropdown1{
+        width: 480px;
+    }
+    #middle .faj2 .dropdown2{
+        width: 480px;
+    }
+    #middle .faj2 .dropdown3{
+        width: 480px;
+    }
+    #middle .faj2 .dropdown4{
+        width: 480px;
+    }
+    #middle .faj2 .dropdown5{
+        width: 480px;
+    }
+    #middle .faj2 .dropdown6{
+        width: 480px;
     }
 }
 
