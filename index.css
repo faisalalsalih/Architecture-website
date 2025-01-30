@@ -230,6 +230,9 @@
     #hero .text p {
         font-size: 1rem;
     }
+    #hero::before{
+        background-size: contain;
+    }
 }
 
 
