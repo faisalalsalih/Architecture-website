@@ -716,6 +716,7 @@
 
 #middle .faj1{
     padding: 40px;
+    background-color: #1c7605;
 }
 
 #middle  .faj1 p{
@@ -875,6 +876,9 @@
     cursor: pointer;
 }
 
+#middle .faj2{
+    background-color: aquamarine;
+}
 
 
 
@@ -913,7 +917,7 @@
 }
 
 
-@media only screen and (max-width:540px){
+@media only screen and (max-width:525px){
     #middle .faj2 .dropdown1{
         width: 480px;
     }
@@ -929,8 +933,47 @@
     #middle .faj2 .dropdown5{
         width: 480px;
     }
-    #middle .faj2 .dropdown6{
-        width: 480px;
+}
+
+@media only screen and (max-width:500px){
+    #middle .faj2 .dropdown1{
+        width: 400px;
+        height: 70px;
+
+    }
+    #middle .faj2 .dropdown2{
+        width: 400px;
+        height: 70px;
+
+    }
+    #middle .faj2 .dropdown3{
+        width: 400px;
+        height: 70px;
+
+    }
+    #middle .faj2 .dropdown4{
+        width: 400px;
+        height: 70px;
+
+    }
+    #middle .faj2 .dropdown5{
+        width: 400px;
+        height: 70px;
+    }
+    #middle .faj2 .dropdown1 p{
+        margin-right: 10px;
+    }
+    #middle .faj2 .dropdown2 p{
+        margin-right: 10px;
+    }
+    #middle .faj2 .dropdown3 p{
+        margin-right: 10px;
+    }
+    #middle .faj2 .dropdown4 p{
+        margin-right: 10px;
+    }
+    #middle .faj2 .dropdown5 p{
+        margin-right: 10px;
     }
 }
 
