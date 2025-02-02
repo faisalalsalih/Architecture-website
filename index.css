@@ -231,7 +231,10 @@
         font-size: 1rem;
     }
     #hero::before{
-        background-size: contain;
+        background-size: 100% 100%;
+    }
+    .sidebar::before{
+        background-size: 100% 100%;
     }
 }
 
@@ -247,6 +250,7 @@
 #middle {
     width: 100%;
     height: fit-content;
+    overflow: hidden;
 }
 
 #middle .interior {
@@ -716,7 +720,6 @@
 
 #middle .faj1{
     padding: 40px;
-    background-color: #1c7605;
 }
 
 #middle  .faj1 p{
@@ -876,9 +879,7 @@
     cursor: pointer;
 }
 
-#middle .faj2{
-    background-color: aquamarine;
-}
+
 
 
 
