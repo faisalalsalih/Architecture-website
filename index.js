@@ -80,7 +80,7 @@ dropo1.onclick = () => {
     }
     else{
     dropo1.style.transform = "rotate(180deg)";
-    dropdown1.style.height = "120px";
+    dropdown1.style.height = "170px";
     dropdown1.style.transition = "all 400ms ease-in-out"
     details1.style.gap = "20px";
     }
@@ -98,7 +98,7 @@ dropo2.onclick = () => {
     }
     else{
     dropo2.style.transform = "rotate(180deg)";
-    dropdown2.style.height = "120px";
+    dropdown2.style.height = "170px";
     dropdown2.style.transition = "all 400ms ease-in-out"
     details2.style.gap = "20px";
     }
@@ -117,7 +117,7 @@ dropo3.onclick = () => {
     }
     else{
     dropo3.style.transform = "rotate(180deg)";
-    dropdown3.style.height = "120px";
+    dropdown3.style.height = "170px";
     dropdown3.style.transition = "all 400ms ease-in-out"
     details3.style.gap = "20px";
     }
@@ -136,7 +136,7 @@ dropo4.onclick = () => {
     }
     else{
     dropo4.style.transform = "rotate(180deg)";
-    dropdown4.style.height = "120px";
+    dropdown4.style.height = "170px";
     dropdown4.style.transition = "all 400ms ease-in-out"
     details4.style.gap = "20px";
     }
@@ -155,7 +155,7 @@ dropo5.onclick = () => {
     }
     else{
     dropo5.style.transform = "rotate(180deg)";
-    dropdown5.style.height = "120px";
+    dropdown5.style.height = "170px";
     dropdown5.style.transition = "all 400ms ease-in-out"
     details5.style.gap = "20px";
     }
